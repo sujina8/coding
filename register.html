@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME</title>
+    <link href="style.css"rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <!--<a href="#footer" style="color:black">Go To Bottom</a>-->
+            <div id="logo">
+               <img src="cofee_logo.jpg" alt="Logo" style="height:100px; width:100px;">
+            </div>
+            <div class="title">
+                <h1>Cozy Corner Cafe</h1>
+                <h4>Enjoy the coffee</h4>
+            </div>
+                
+            <div class="social">
+                    <div>
+                    <h3>Follow Us</h3>
+                    <a href="https://www.facebook.com/" target="blank"><img src="facebook.jpg" alt="facebook" style="height: 25px; width:40px;"></a>
+                
+                    <a href="https://www.youtube.com/" target="blank"><img src="youtube.png" alt="youtube" style="height:25px; width:30px;"></a>
+                    
+                
+                    <a href="https://www.instagram.com/" target="blank"><img src="instagram.png" alt="instagram" style="height:25px; width:30px;"></a> 
+                </div>
+            </div>
+
+        </div>
+    
+        <div id="nav">
+            <ul>
+                <!--Hyperlinks in html
+                anchor tag
+            href=>hyperlink reference>>used to link two pages
+        href=>hyperlink reference
+    i) relative URL
+    ii)Absolute URL
+    iii)In Page Link-->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Policies</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="">User &nabla;</a>
+                    <ul>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="#">Sign In</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div> 
+
+        <div id="reg">
+            <form method="get" action="save.php" 
+            enctype="multipart/form-data">
+                <div class="form-group">
+                <label for="">Full Name</label>
+                <input type="text"name="fullname" maxlength="5" required pattern="[a-zA-Z0-9\s]+">
+            </div>
+
+            <div class="form-group">
+                <label for="">Address</label>
+                <input type="text" name="Address"
+                placeholder="Address...">
+            </div>
+
+            <div class="form-group">
+                <label for="">DOB</label>
+                <input type="date" name="DOB" min="1989-01-01" max="2004-01-01">
+            </div>
+
+            <div class="form-group">
+                <label for="">Gender</label>
+                <input type="radio" name="gender" value="Male" id="male">
+                <label for="">Male</label>
+
+                <input type="radio" name="gender" value="Female" id="female">
+                <label for="">Female</label>
+
+                <input type="radio" name="gender" value="Other" id="other">
+                <label for="">Other</label>
+            </div>
+
+
+
+            <div class="form-group">
+                <label for="">Fields:</label>
+                <input type="checkbox" name="Fields[]" value="Programming">
+                <label for="">Programming</label>
+                <input type="checkbox" name="Fields[]" value="Designing">
+                <label for="">Designing</label>
+                <input type="checkbox" name="Fields[]" value="Marketing">
+                <label for="">Marketing</label>
+                <input type="checkbox" name="Fields[]" value="Administration">
+                <label for="">Administration</label>
+                <input type="checkbox" name="Fields[]" value="Buisness">
+                <label for="">Buisness</label>
+                  
+            </div>
+
+            <div class="form-group">
+                <label for="">Province</label>
+                <select name="province" id="">
+                    <option value="">Select Province</option>
+                    <option value="Madhesh">Madhesh</option>
+                    <option value="Bagmati"selected>Bagmati</option>
+                    <option value="Gandaki">Gandaki</option>
+                    <option value="Lumbini">Lumbini</option>
+                    <option value="Karnali">Karnali</option>
+                    <option value="Sudur Paschim">Sudur Paschim</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for=""class="cmt">Comment</label>
+                <textarea name="comment" id="" cols="30" rows="5"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="">Email</label>
+                <input type="email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="">Password</label>
+                 <input type="password" name="pwd">
+            </div>
+
+            <div class="form-group">
+                <label for="">Mobile No</label>
+                <input type="Number" name="mobile no" min="0" max="10">
+            </div>
+
+            <div class="form-group">
+                <label for="">Website</label>
+                <input type="url" name="website">
+            </div>
+
+            <div class="form-group">
+                <label for="">Range</label>
+                <input type="range" name="range" min="05" max="10">
+            </div>
+
+            <div class="form-group">
+                <label for="">Color</label>
+                <input type="Color" name="color">
+            </div>
+
+            <div class="form-group">
+                <label for="">CV</label>
+                <input type="file" name="cv">
+            </div>
+
+            <div class="form-group">
+                <input type="button" value="click">
+                <input type="reset">
+                <input type="submit" value="Register">
+            </div>
+
+            <div class="form-group">
+                <button type="button">Click</button>
+                <button type="reset">reset</button>
+                <button type="submit">submit</button>
+            </div>
+
+
+
+
+
+        </form>
+    </div>
+
+        <div id="footer">
+            <a href="#header" style="color:black">Go To Top</a>
+        </div>
+    </div> 
+</body>
+</html>

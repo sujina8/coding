@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sunday</h1>
+    <input type="button" value="Count" onclick="addCounter()">
+    
+
+    <div id= "myDiv" onclick="changeDiv()"
+    style="height:100px; width:100px; background: burlywood;">
+    <img src="americano.jpg" alt="Img1" id="myImg"
+    style="height:100px; width:100px;" 
+    onmouseover="changeImg('large')" onmouseout="changeImg('small')">
+    </div>
+
+    <script>
+       
+        counter=0;
+        //isImageLarge=false;
+        days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+
+        function addCounter()
+        {
+            counter+=1;
+
+            if(counter > 7)
+                counter=1
+            document.getElementsByTagName('h1')[0].innerHTML=days[counter-1];
+        }
+
+        function changeDiv()
+        {
+            document.getElementById('myDiv').style.background='green'
+            document.getElementById('myDiv').style.height='200px';
+            document.getElementById('myDiv').style.width='200px';
+        }
+
+        function changeImg(size)
+        {
+            if(size=='small'){
+                document.getElementById('myImg').style.height='100px';
+                document.getElementById('myImg').style.width='100px';
+                //isImageLarge=false;
+
+            }
+            else{
+                document.getElementById('myImg').style.height='200px';
+                document.getElementById('myImg').style.width='200px';
+                //isImageLarge=true;
+            }
+        }
+
+    </script>
+</body>
+</html>

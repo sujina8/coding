@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="first">JavaScript</h1>
+    <form action=""name="calc">
+         <input type="number" id="num1">
+         <input type="number" id="num2">
+
+         <input type="radio" value="+" id="add" name="op">
+         <label for="add">+</label>
+         <input type="radio" value="-" id="sub" name="op">
+         <label for="mul">-</label>
+         <input type="radio" value="*" id="mul" name="op">
+         <label for="add">*</label>
+         <input type="radio" value="/" id="div" name="op">
+         <label for="div">/</label>
+
+         <input type="button" value="result" onclick="calculate()">
+         
+
+    </form>
+
+    
+
+
+    <!--Javascript can change content or structure of HTML document!-->
+    <h1 id="first" onclick="this.innerHTML='Events<i> Content </i>'">Javascript</h1>
+    
+    <!--Javscript can change attribute!-->
+    <h1 onclick="this.align='center'">Attribute Test</h1>
+
+    <!--Javscript can change style-->
+    <h1 onclick="this.style.color='red'">Style Test</h1>
+    
+    <input type="button" value="click" onclick="changefontsize()">
+
+    <script>
+        //print methods
+        document.write("Hello from Javascript");
+        //alert('Hello from Alert');
+        document.getElementById("first").innerHTML="Another Print Content";
+        console.log("This is Console print");
+
+        /*
+        events:
+        Onclick,ondoubleclick,onmouseover,onmouseout,
+        onkeyup,onkeydown,onchange
+        onfocus,onselect,onload
+        */
+
+        //selectors
+        document.getElementById("first");
+        document.getElementsByTagName("h1")[2].innerHTML='hi';
+        document.getElementsByClassName("class_name");
+        document.getElementsByName("element_name");
+
+        //functions in JavaScript
+        function changefontsize()
+        {
+            heading = document.getElementsByTagName("h1");
+
+            for(i=1;i<headings.length;i++)
+            {
+                headings[i].style.fontsize="12px";
+            }
+        }
+
+        function showday()
+        {
+            let num=document.getElementsbyid
+        }
+
+        //selectors
+        //events
+        //manipulation
+
+        /*dialogue boxes
+        alert box,confirm box,prompt box
+        */
+
+        
+
+        a= prompt("Enter 1st number");
+        c= prompt("Enter + or - or * or /");
+        b= prompt("Enter 2nd number");
+
+        if(c==="+")
+        {
+            alert(a+b);
+        }
+        else if(c==="-")
+        {
+            alert(a-b);
+        }
+        else if(c==="*")
+        {
+            alert(a*b);
+        }
+        else if(c==="/")
+        {
+            alert(a/b);
+        }
+        else 
+        {
+            alert("INVALID INPUT");
+        }
+
+        //switch(c)
+
+        
+
+
+
+
+    </script>
+    
+</body>
+</html>
